@@ -1,0 +1,10 @@
+version: '3'
+services:
+  fserv:
+    image: php:apache
+    volumes:
+      - ./app:/var/www/html:ro
+      - ./app/files:/srv/files
+      - ./etc/fserv.php.ini:/usr/local/etc/php/conf.d/fserv.ini
+    ports:
+      - 8654:80

@@ -1,0 +1,21 @@
+fserv
+=====
+
+This is an experiment.  I am trying to organize my digital life
+and part of that means keeping track of files.  I could use a
+service like DropBox, or just a removable drive.  However:
+
+  (a) I want to own as much of this as possible,
+      for personal reasons, and
+
+  (b) The metadata is very important.
+      Specifically: tagging is very important.
+
+If you find this code and want to run it, I have enclosed the
+Docker Compose recipe that I use.  It depends on the upstream PHP
+image (Apache flavor).  For the most part, though, that image is
+just an artifact of convenience - any mod_php installation should
+do just fine.
+
+There is no authentication on this application.  Run it in
+production at your own peril.
